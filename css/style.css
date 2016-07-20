@@ -104,6 +104,10 @@ div > h2:last-child {
   clear: both;
 }
 
+.preload {
+  display: none;
+}
+
 .demo {
   position: absolute;
   width: 100%;
