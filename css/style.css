@@ -1,0 +1,356 @@
+@font-face {
+  font-family: 'Harabara Mais';
+  src: url('../fonts/Harabara Mais.otf') format('opentype');
+}
+
+html {
+  color: #fff;
+  font-family: 'Harabara Mais';
+  font-size: 1.23vw;
+  background: url('../images/desktop-background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  height: 100%;
+  word-wrap: break-word;
+}
+
+body {
+  position: relative;
+  min-height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+.content {
+  font-family: Arial;
+  padding: 3% 2%;
+}
+
+a {
+  font-weight: bold;
+  color: #cc3f91;
+}
+
+nav {
+  padding: 2% 2% 0;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 2.4vw;
+  font-weight: normal;
+  margin-right: 2.4%;
+  opacity: 0.22;
+}
+
+nav a:hover,
+nav a.active {
+  opacity: 1;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+div > h2:last-child {
+  margin-bottom: 0;
+}
+
+.faq {
+  margin: 0;
+  padding: 0 0 0 2.2%;
+  font-size: 1.4vw;
+  width: 65%;
+}
+
+.faq li {
+  list-style-type: none;
+  margin-bottom: 0.7%;
+}
+
+.faq li:nth-child(odd):before {
+  position: absolute;
+  margin-left: -2%;
+  content: 'Q:';
+}
+
+.faq li:nth-child(even) {
+  margin-bottom: 4%;
+}
+
+.faq li:nth-child(even):before {
+  position: absolute;
+  margin-left: -2%;
+  content: 'A:';
+}
+
+.faq li:last-child {
+  margin-bottom: 0;
+}
+
+.instructions {
+  margin: 27px 0 0;
+}
+
+.instructions li {
+  margin-bottom: 10px;
+}
+
+.instructions li:last-child {
+  margin-bottom: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.demo {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+.demo img {
+  float: left;
+}
+
+.keyboard {
+  position: absolute;
+  bottom: 0;
+  left: 2%;
+  width: 27%;
+}
+
+.key-one {
+  width: 24%;
+}
+
+.key-two {
+  width: 25%;
+}
+
+.key-three {
+  width: 24%;
+}
+
+.key-four {
+  width: 25%;
+}
+
+.key-q {
+  width: 33%;
+}
+
+.key-w {
+  width: 26%;
+}
+
+.key-e {
+  width: 23%;
+}
+
+.key-a {
+  width: 33%;
+}
+
+.key-s {
+  width: 26%;
+}
+
+.key-d {
+  width: 26%;
+}
+
+.key-z {
+  width: 41%;
+}
+
+.key-x {
+  width: 28%;
+}
+
+.key-c {
+  width: 24%;
+}
+
+.key-space {
+  width: 100%;
+}
+
+.mouse {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 30%;
+}
+
+.button-left {
+  width: 21%;
+}
+
+.button-right {
+  width: 78%;
+}
+
+.button-wheel {
+  width: 78%;
+}
+
+.button-thumb-forward {
+  width: 21%;
+}
+
+.button-thumb-back {
+  width: 78%;
+}
+
+/* responsive styles */
+
+/* mobile portrait mode */
+@media only screen and
+  (min-device-width : 320px) and
+  (max-device-width : 480px) {
+  
+  html {
+    font-size: 27px;
+  }
+
+  nav {
+    padding: 4% 5%;
+  }
+
+  nav a {
+    display: block;
+    font-size: 10vw;
+  }
+
+  .keyboard {
+    width: 42%;
+  }
+
+  .mouse {
+    width: 46%;
+  }
+
+  .content {
+    padding: 4% 5.6% 7%;
+  }
+
+  .faq,
+  .instructions {
+    width: auto;
+    font-size: 27px;
+  }
+
+  .faq {
+    padding-left: 77px;
+  }
+
+  .faq li {
+    margin-bottom: 10px;
+  }
+
+  .faq li:before {
+    font-size: 55px;
+  }
+
+  .faq li:nth-child(even) {
+    margin-bottom: 66px;
+  }
+
+  .faq li:nth-child(odd):before,
+  .faq li:nth-child(even):before {
+    margin-left: -77px;
+  }
+
+  .faq li:last-child {
+    margin-bottom: 0;
+  }
+
+  .instructions {
+    padding-left: 80px
+  }
+
+  .instructions li {
+    margin-bottom: 40px;
+  }
+
+  .instructions pre {
+    font-size: 52px;
+  }
+}
+
+/* mobile landscape mode */
+@media only screen and
+  (min-device-width : 481px) and
+  (max-device-width : 768px) {
+  
+  html {
+    font-size: 27px;
+  }
+
+  nav {
+    padding: 4%;
+  }
+
+  nav a {
+    font-size: 3vw;
+  }
+
+  .content {
+    padding: 0 4% 4%;
+  }
+
+  .faq,
+  .instructions {
+    width: auto;
+    font-size: 22px;
+  }
+
+  .keyboard {
+    left: 3.5%;
+    width: 30%;
+  }
+
+  .mouse {
+    right: 2.5%;
+    width: 33%;
+  }
+
+  .faq {
+    padding-left: 50px;
+  }
+
+  .faq li {
+    margin-bottom: 10px;
+  }
+
+  .faq li:before {
+    font-size: 32px;
+  }
+
+  .faq li:nth-child(even) {
+    margin-bottom: 40px;
+  }
+
+  .faq li:nth-child(odd):before,
+  .faq li:nth-child(even):before {
+    margin-left: -50px;
+  }
+
+  .faq li:last-child {
+    margin-bottom: 0;
+  }
+
+  .instructions {
+    padding-left: 50px
+  }
+
+  .instructions li {
+    margin-bottom: 40px;
+  }
+
+  .instructions pre {
+    font-size: 32px;
+  }
+}
