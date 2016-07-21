@@ -7,7 +7,7 @@ html {
   color: #fff;
   font-family: 'Harabara Mais';
   font-size: 1.23vw;
-  background: url('../images/desktop-background.jpg') no-repeat center center fixed;
+  background: url('../images/background.jpg') no-repeat center center fixed;
   background-size: cover;
   height: 100%;
   word-wrap: break-word;
